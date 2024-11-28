@@ -6,15 +6,32 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+      </profile>
+      <profile name="Annotation profile for postal" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="E:/apache-maven-3.6.3/repository/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar" />
+        </processorPath>
         <module name="postal-biz" />
         <module name="postal-service" />
         <module name="postal-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="postal-biz" target="1.5" />
-      <module name="postal-service" target="1.5" />
-      <module name="postal-web" target="1.5" />
+      <module name="postal-API" target="1.8" />
+      <module name="postal-biz" target="1.8" />
+      <module name="postal-service" target="1.8" />
+      <module name="postal-web" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="postal-API" options="-parameters" />
+      <module name="postal-biz" options="-parameters" />
+      <module name="postal-service" options="-parameters" />
+      <module name="postal-web" options="-parameters" />
+    </option>
   </component>
 </project>
