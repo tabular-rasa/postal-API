@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vnici.postal.biz.mapper.PostalAreaDao">
+
+
+<!--    <insert id="addPostalArea" useGeneratedKeys="true" keyProperty="id" parameterType="com.vnici.postal.biz.entity.PostalArea">-->
+<!--        insert into postal_area (area_name, area_position, mark_color)-->
+<!--        values (#{areaName}, #{areaPosition}, #{markColor})-->
+<!--    </insert>-->
+
+    <insert id="addPostalArea" useGeneratedKeys="true" keyProperty="id" parameterType="com.vnici.postal.biz.entity.PostalArea">
+        insert into postal_area
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="areaName != null and areaName != ''">area_name,</if>
+            <if test="areaPosition != null">area_position,</if>
+            <if test="markColor != null">mark_color,</if>
+        </trim>
+        <trim prefix="VALUES (" suffix=")" suffixOverrides=",">
+            <if test="areaName != null and areaName != ''">#{areaName},</if>
+            <if test="areaPosition != null">#{areaPosition},</if>
+            <if test="markColor != null">#{markColor},</if>
+        </trim>
+    </insert>
+    <update id="updatePostalAreaById" parameterType="com.vnici.postal.biz.entity.PostalArea">
+        update postal_area
+        <set>
+            <if test="areaId != null">
+                area_id = #{areaId},
+            </if>
+            <if test="areaName != null and areaName != ''">
+                area_name = #{areaName},
+            </if>
+            <if test="areaPosition != null and areaPosition != '' ">
+                area_position = #{areaPosition},
+            </if>
+            <if test="markColor != null and markColor != '' ">
+                mark_color = #{markColor},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+    <delete id="removePostalAreaById" parameterType="java.lang.Integer">
+        delete from postal_area where id = #{Id}
+    </delete>
+    <select id="getAllPostalAreas" resultType="com.vnici.postal.biz.entity.PostalArea">
+        select * from postal_area
+    </select>
+</mapper>

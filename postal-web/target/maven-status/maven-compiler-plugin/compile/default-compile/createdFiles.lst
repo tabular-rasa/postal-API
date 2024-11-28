@@ -1,0 +1,4 @@
+com\vnici\postal\web\controller\PostalAreaController.class
+com\vnici\postal\web\PostalWebApplication.class
+com\vnici\postal\web\response\Response.class
+com\vnici\postal\web\controller\PolygonController.class

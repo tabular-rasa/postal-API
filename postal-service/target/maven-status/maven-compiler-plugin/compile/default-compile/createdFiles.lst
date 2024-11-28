@@ -1,0 +1,5 @@
+com\vnici\postal\service\impl\PolygonServiceImpl.class
+com\vnici\postal\service\PostalServiceApplication.class
+com\vnici\postal\service\api\PostalAreaService.class
+com\vnici\postal\service\api\PolygonService.class
+com\vnici\postal\service\impl\PostalAreaServiceImpl.class
