@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="19075744-389d-4242-89c8-1a6c7a4bcc36" name="Changes" comment="区域判断">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/src/main/java/com/vnici/postal/biz/entity/Destination.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/src/main/java/com/vnici/postal/biz/entity/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/src/main/java/com/vnici/postal/biz/entity/PostalArea.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/src/main/java/com/vnici/postal/biz/mapper/PostalAreaDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/src/main/java/com/vnici/postal/biz/request/AreaAddRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/src/main/java/com/vnici/postal/biz/request/PolygonRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/src/main/resources/application-biz-test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/src/main/resources/mapping/PostalAreaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/src/main/resources/postal.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/target/classes/application-biz-test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/target/classes/com/vnici/postal/biz/entity/Destination.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/target/classes/com/vnici/postal/biz/entity/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/target/classes/com/vnici/postal/biz/entity/PostalArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/target/classes/com/vnici/postal/biz/mapper/PostalAreaDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/target/classes/com/vnici/postal/biz/request/AreaAddRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/target/classes/com/vnici/postal/biz/request/PolygonRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/target/classes/mapping/PostalAreaMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/target/classes/postal.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-biz/target/postal-biz-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/src/main/java/com/vnici/postal/service/PostalServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/src/main/java/com/vnici/postal/service/api/PolygonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/src/main/java/com/vnici/postal/service/api/PostalAreaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/src/main/java/com/vnici/postal/service/impl/PolygonServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/src/main/java/com/vnici/postal/service/impl/PostalAreaServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/src/main/resources/application-test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/src/test/java/com/vnici/postal/service/ServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/classes/application-test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/classes/com/vnici/postal/service/PostalServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/classes/com/vnici/postal/service/api/PolygonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/classes/com/vnici/postal/service/api/PostalAreaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/classes/com/vnici/postal/service/impl/PolygonServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/classes/com/vnici/postal/service/impl/PolygonServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/classes/com/vnici/postal/service/impl/PostalAreaServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/postal-service-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/surefire-reports/TEST-com.vnici.postal.service.ServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/surefire-reports/com.vnici.postal.service.ServiceTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/test-classes/com/vnici/postal/service/ServiceTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-service/target/test-classes/com/vnici/postal/service/ServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/src/main/java/com/vnici/postal/web/PostalWebApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/src/main/java/com/vnici/postal/web/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/src/main/java/com/vnici/postal/web/controller/PolygonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/src/main/java/com/vnici/postal/web/controller/PostalAreaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/src/main/java/com/vnici/postal/web/response/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/src/main/resource/application-test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/target/classes/application-test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/target/classes/com/vnici/postal/web/PostalWebApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/target/classes/com/vnici/postal/web/config/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/target/classes/com/vnici/postal/web/controller/PolygonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/target/classes/com/vnici/postal/web/controller/PostalAreaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postal-web/target/classes/com/vnici/postal/web/response/Response.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/apache-maven-3.6.3" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2oQ3bBvS9bDbjLRbA5w12f6KrNT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "F:/postal",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "1ea72b5a239e6c8b53e188acaae42e47",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\work\postal-API" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\work\postal-API\postal-service\src" />
+      <recent name="F:\work\postal-API\postal-biz\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PostalWebApplication">
+    <configuration name="ServiceTest.addPostalArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="postal-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vnici.postal.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vnici.postal.service" />
+      <option name="MAIN_CLASS_NAME" value="com.vnici.postal.service.ServiceTest" />
+      <option name="METHOD_NAME" value="addPostalArea" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.selectPostalAreas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="postal-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vnici.postal.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vnici.postal.service" />
+      <option name="MAIN_CLASS_NAME" value="com.vnici.postal.service.ServiceTest" />
+      <option name="METHOD_NAME" value="selectPostalAreas" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.textToPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="postal-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vnici.postal.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vnici.postal.service" />
+      <option name="MAIN_CLASS_NAME" value="com.vnici.postal.service.ServiceTest" />
+      <option name="METHOD_NAME" value="textToPoints" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTest.updatePostalAreas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="postal-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vnici.postal.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vnici.postal.service" />
+      <option name="MAIN_CLASS_NAME" value="com.vnici.postal.service.ServiceTest" />
+      <option name="METHOD_NAME" value="updatePostalAreas" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostalWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="test" />
+      <module name="postal-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vnici.postal.web.PostalWebApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vnici.postal.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ServiceTest.textToPoints" />
+      <item itemvalue="JUnit.ServiceTest.selectPostalAreas" />
+      <item itemvalue="JUnit.ServiceTest.updatePostalAreas" />
+      <item itemvalue="JUnit.ServiceTest.addPostalArea" />
+      <item itemvalue="Spring Boot.PostalWebApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PostalWebApplication" />
+        <item itemvalue="JUnit.ServiceTest.textToPoints" />
+        <item itemvalue="JUnit.ServiceTest.addPostalArea" />
+        <item itemvalue="JUnit.ServiceTest.updatePostalAreas" />
+        <item itemvalue="JUnit.ServiceTest.selectPostalAreas" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19075744-389d-4242-89c8-1a6c7a4bcc36" name="Changes" comment="" />
+      <created>1730788041008</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730788041008</updated>
+      <workItem from="1730788042104" duration="19742000" />
+      <workItem from="1731378493059" duration="1237000" />
+      <workItem from="1732500753586" duration="7862000" />
+      <workItem from="1732601566396" duration="5753000" />
+      <workItem from="1732622505319" duration="8961000" />
+      <workItem from="1732681651492" duration="754000" />
+      <workItem from="1732758296936" duration="1930000" />
+      <workItem from="1732773592503" duration="23000" />
+      <workItem from="1732773626679" duration="60000" />
+      <workItem from="1732773696654" duration="79000" />
+      <workItem from="1732773785931" duration="21000" />
+      <workItem from="1732773833497" duration="1438000" />
+      <workItem from="1733211950301" duration="1305000" />
+      <workItem from="1733214627080" duration="1949000" />
+      <workItem from="1733291664758" duration="5122000" />
+    </task>
+    <task id="LOCAL-00001" summary="区域判断">
+      <created>1732765332075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732765332075</updated>
+    </task>
+    <task id="LOCAL-00002" summary="区域判断">
+      <created>1732765400294</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732765400294</updated>
+    </task>
+    <task id="LOCAL-00003" summary="区域判断">
+      <created>1732765501370</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732765501371</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="区域判断" />
+    <option name="LAST_COMMIT_MESSAGE" value="区域判断" />
+  </component>
+</project>

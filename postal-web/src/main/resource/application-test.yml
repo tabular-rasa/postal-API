@@ -1,8 +1,0 @@
-server:
-  port: 8060
-spring:
-  profiles:
-    include: biz-test
-  application:
-    name: post-m-web
-
