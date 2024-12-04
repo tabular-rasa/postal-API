@@ -1,5 +1,0 @@
-com\vnici\postal\biz\request\AreaAddRequest.class
-com\vnici\postal\biz\entity\Point.class
-com\vnici\postal\biz\mapper\PostalAreaDao.class
-com\vnici\postal\biz\request\PolygonRequest.class
-com\vnici\postal\biz\entity\PostalArea.class

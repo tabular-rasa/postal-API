@@ -7,6 +7,8 @@ import com.vnici.postal.biz.request.AreaAddRequest;
 import com.vnici.postal.biz.request.PolygonRequest;
 import com.vnici.postal.service.api.PolygonService;
 import com.vnici.postal.web.response.Response;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import java.util.List;
 
-
+@Api(tags = "经纬度点判断")
 @RequestMapping("/polygon/")
 @RestController
 @Slf4j
@@ -23,7 +25,7 @@ public class PolygonController {
 
     @Resource
     PolygonService polygonService;
-
+    @ApiOperation(value = "根据接口自定义传的点所形成的区域判断")
     @RequestMapping(value = "/checkPoints",method = RequestMethod.POST)
     public Response<List<Point>> checkPoints(@RequestBody PolygonRequest request) {
         try {
@@ -40,6 +42,7 @@ public class PolygonController {
     }
 
     // 根据数据库中的区域判断
+    @ApiOperation(value = "根据数据库中存储的区域判断")
     @RequestMapping(value = "/checkPoints_v2",method = RequestMethod.POST)
     public Response<List<Destination>> checkPointsV2(@RequestBody PolygonRequest request) {
         try {

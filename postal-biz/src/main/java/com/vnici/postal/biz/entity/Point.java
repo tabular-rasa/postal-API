@@ -15,4 +15,8 @@ public class Point {
         this.lat = lat;
         this.lng = lng;
     }
+
+    public Point(){
+
+    }
 }
